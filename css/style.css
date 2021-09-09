@@ -1,0 +1,392 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,400;1,500;1,600&display=swap");
+
+/* :root {
+  --success-color: #2ecc71;
+  --error-color: #e74c3c;
+} */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Exo 2", sans-serif;
+}
+
+/* scroll */
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: red;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000;
+}
+
+/* End scroll */
+
+a {
+  text-decoration: none;
+  color: blueviolet;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.form-section {
+  padding: 1rem;
+}
+
+.form-section h1 {
+  margin: 1rem 0;
+  padding-bottom: 2rem;
+  position: sticky;
+  top: 20px;
+}
+
+form .container {
+  margin-top: 1.9rem;
+}
+form .container label {
+  padding-bottom: 0.5rem;
+  display: block;
+}
+
+form .container input {
+  padding: 0.5rem;
+
+  width: 100%;
+}
+form .container select {
+  width: 100%;
+}
+form .container input[type="radio"] {
+  width: initial;
+}
+form .container .name-input {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  column-gap: 1rem;
+  margin: 0.8rem 0;
+}
+
+form .container .name-input input {
+  height: auto;
+}
+
+form .container .name-input label {
+  display: block;
+}
+
+.fname-div {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+}
+
+.lname-div {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+}
+
+form .container .gender {
+  margin: 0.8rem 0;
+}
+form .container .gender-input {
+  /* display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start; */
+  margin: 0.8rem 0;
+}
+
+#male {
+  margin: 1rem;
+  padding: 0 0.5rem;
+}
+
+#female {
+  margin: 1rem;
+  padding: 0 0.5rem;
+}
+
+.gender-input input[type="radio"] {
+  display: inline;
+  border: 1px solid black;
+  padding: 0;
+  width: initial;
+}
+
+.email-div {
+  margin: 0.8rem 0;
+}
+
+.phone-div {
+  margin: 0.8rem 0;
+}
+
+.country-city {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  column-gap: 1rem;
+  margin: 0.8rem 0;
+}
+
+.country-city select {
+  align-self: flex-start;
+  padding: 0.5rem;
+  /* width: 100%; */
+}
+
+.country-div {
+  flex-basis: 50%;
+}
+.city-div {
+  flex-basis: 50%;
+}
+
+.school-div {
+  margin: 0.8rem 0;
+}
+
+.level-skill {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 1rem;
+  margin: 0.8rem 0;
+}
+.level-skill select {
+  padding: 0.5rem;
+  width: 100%;
+}
+
+.level-div {
+  flex: 1 1 0;
+}
+
+.skill-div {
+  flex: 1 1 0;
+}
+
+.password-div {
+  margin: 0.8rem 0;
+}
+
+.confirm-password-div {
+  margin: 0.8rem 0;
+}
+
+.remember {
+  display: flex;
+  align-items: center;
+}
+
+.remember input[type="checkbox"] {
+  display: inline-block;
+  width: initial;
+  margin-right: 1rem;
+}
+
+.register-btn {
+  display: block;
+  padding: 1rem;
+  width: 100%;
+  margin: 1rem 0;
+
+  font-size: 24px;
+  /* text-align: center; */
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #1e201f;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 5px rgb(133, 2, 255);
+}
+
+.register-btn:hover {
+  background-color: blueviolet;
+  color: white;
+}
+
+.register-btn:active {
+  background-color: rgb(16, 3, 29);
+  box-shadow: 0 3px rgb(133, 2, 255);
+  transform: translateY(4px);
+}
+
+.password-div,
+.confirm-password-div {
+  position: relative;
+}
+
+.password-div i,
+.confirm-password-div i {
+  cursor: pointer;
+  position: absolute;
+  right: 15px;
+  top: 52px;
+}
+
+/* form Validate */
+/* form control */
+
+.form-control {
+  padding: 0.5rem 0;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.form-control label {
+  /* display: block; */
+  margin-bottom: 5px;
+}
+
+.form-control input {
+  border: 2px solid #f0f0f0;
+  border-radius: 4px;
+  /* width: 100%; */
+  padding: 0.6rem;
+  font-size: 14px;
+}
+
+.form-control select {
+  border: 2px solid #f0f0f0;
+  border-radius: 4px;
+  /* padding: 0.6px;
+  font-size: 14px; */
+}
+
+.form-control input:focus {
+  outline: 0;
+  border-color: #777;
+}
+
+.form-control.success input {
+  border-color: green;
+}
+
+/* .form-control.success select {
+  border-color: green;
+} */
+
+.form-control.error input {
+  border-color: red;
+}
+.form-control.error select {
+  border-color: red;
+}
+
+.form-control small {
+  color: red;
+  position: absolute;
+  bottom: -0.5rem;
+  left: 0;
+
+  visibility: hidden;
+}
+
+.form-control.error small {
+  visibility: visible;
+}
+
+/* form control */
+
+.logo-div {
+  position: sticky;
+  /* display: inline; */
+  top: 0;
+  width: 100%; /* Full width */
+  transition: 0.2s;
+
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #fff;
+  color: black;
+  z-index: 3;
+}
+
+.logo-div img {
+  width: 25px;
+  height: auto;
+}
+
+.logo-div p {
+  font-family: "Pacifico", sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+.aside-section {
+  padding: 2rem;
+}
+
+.aside-section p {
+  /* text-align: center; */
+  color: black;
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .form-section {
+    flex-grow: 1;
+    flex-basis: 40%;
+
+    width: 100%;
+    padding: 2rem;
+  }
+  .aside-section {
+    display: initial;
+    background-color: blueviolet;
+    flex-basis: 60%;
+    height: auto;
+  }
+  .aside-section img {
+    /* max-width: 40rem; */
+    max-height: 100%;
+    height: 60%;
+    margin: auto;
+    position: sticky;
+    top: 0;
+  }
+
+  .aside-section p {
+    position: sticky;
+    top: 0;
+    margin-top: 3rem;
+    color: white;
+  }
+}

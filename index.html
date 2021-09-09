@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proton user form</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <main>
+    <div class="form-section">
+      <div class="logo-div">
+        <img src="img/ptlogo.png" alt="PT-LOGO" srcset="">
+        <p>Proton</p>
+      </div>
+      <h1>Welcome to Proton</h1>
+      <p>Already have an Account? <span class="login-link"><a href="#">Login</a></span></p>
+
+      <form id="form" class="form">
+        <div class="container form-container">
+          
+
+       
+          <div class="name-input ">
+            <div class="fname-div ">
+              <div class="form-control">
+                <label for="fname"><b>First Name</b></label>
+                <input id="fname" type="text" placeholder="Habeeb" name="fname" >
+                <small>Error message</small>
+              </div>
+            </div>
+            <div class="lname-div ">
+              <div class="form-control">
+                <label for="lname"><b>Last Name</b></label>
+                <input id="lname" type="text" placeholder="Abisola" name="lname" >
+                <small>Error message</small>
+
+              </div>
+            </div>
+           
+          </div>
+
+          <label class="gender" for="gender"><b>Gender</b></label>
+          
+          <div class="gender-input form-control">
+            
+            <input id="male" type="radio"  name="gender"  value="male">Male
+            <input id="female" type="radio"  name="gender"  value="female">Female
+            <small>Error message</small>
+          </div>
+
+          <div class="email-div form-control">
+            <label for="email"><b>Email</b></label>
+            <input id="email" type="email" placeholder="example@gmail.com" name="email" >
+            <small>Error message</small>
+          </div>
+
+          <div class="phone-div form-control">
+            <label for="phoneno"><b>Phone</b></label>
+            <input id="phone" type="text" placeholder="+234 812-756-098" name="phoneno" >
+            <small>Error message</small>
+          </div>
+
+          <div class="country-city ">
+            <div class="country-div ">
+              <div class="form-control">
+                <label for="country"><b>Country</b></label>
+                <select id="country-select" class="country">
+                  <option value="select country">Select Country</option>
+                  <option value="nigeria">Nigeria</option>
+                  <option value="canada">Canada</option>
+                  <option value="china">China</option>
+                </select>
+                <small>Error message</small>
+              </div>
+            
+            </div>
+            <div class="city-div ">
+              <div class="form-control">
+                <label for="city"><b>City</b></label>
+              <input id="city" class="city" type="text" placeholder="Lagos" name="city" >
+              <small>Error message</small>
+              </div>
+              
+            </div>
+           
+          </div>
+
+          <!-- <div class="school-div">
+            <label for="school"><b>School</b></label>
+            <input type="text" placeholder="Name of School" name="school" >
+          </div> -->
+
+          <div class="level-skill">
+            <div class="level-div ">
+              <div class="form-control">
+                <label for="level"><b>Country</b></label>
+                <select id="level-select" class="level">
+                  <option value="select level">Select level</option>
+                  <option value="100L">100L</option>
+                  <option value="200L">200L</option>
+                  <option value="300L">300</option>
+                  <option value="400L">400L</option>
+                  <option value="500L">500L</option>
+  
+  
+                </select>
+                <small>Error message</small>
+              </div>
+            
+            </div>
+            <div class="skill-div ">
+              <div class="form-control">
+                <label for="skill"><b>Skills or Interests</b></label>
+                <select id="skill-select" class="skill">
+                  <option value="select skill">Select skill</option>
+                  <option value="frontend">Frontend</option>
+                  <option value="backend">Backend</option>
+                  <option value="design">Design</option>
+                  <option value="marketting">Digital Marketting</option>
+                  <option value="datascience">Data Science</option>
+  
+  
+                </select>
+                <small>Error message</small>
+              </div>
+
+            </div>
+           
+          </div>
+      
+          <div class="password-div ">
+
+            <div class="form-control">
+              <label for="psw"><b>Password</b></label>
+            <input class="password" id="password" type="password" placeholder="Enter Password" name="psw"  >
+            <i class="fa fa-eye" id="password-show1"></i>
+            <small>Error message</small>
+            </div>
+            
+          </div>
+      
+          <div class="confirm-password-div ">
+
+            <div class="form-control">
+              <label for="psw-repeat"><b>Repeat Password</b></label>
+            <input class="password" id="password2" type="password" placeholder="Repeat Password" name="psw-repeat" >
+            <i class="fa fa-eye" id="password-show2"></i>
+
+            <small>Error</small>
+            </div>
+            
+          </div>
+
+     
+      
+          <div class="remember">
+            <input type="checkbox" checked="checked" name="remember" > Remember me
+          </div>
+          
+
+          <button class="register-btn btn" >SUBMIT</button>
+          <!-- <button type="button" class="register-btn">REGISTER</button> -->
+          
+          <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+      
+          
+        </div>
+      </form>
+
+    </div>
+
+    
+
+    <div class="aside-section">
+
+      <p>A few clicks away from creating your account</p>
+
+      <img src="img/illustration-woman.svg" alt="">
+
+    </div>
+  </main>
+</body>
+</html>
